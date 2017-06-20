@@ -1,0 +1,6 @@
+node_modules/
+.DS_Store
+*.pdf
+*.zip
+public/scripts.app.js
+public/styles/style.css

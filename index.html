@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>sunspot</title>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<!-- <script src="js/dist/js/smooth-scroll.js"></script> -->
+	<link rel="stylesheet" href="dev/styles/css/style.css">
+	<link rel="stylesheet" href="dev/styles/css/animate.css">
+	<link rel="stylesheet" href="dev/styles/css/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:400,700" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+<header>
+	<h1>sunspot</h1>
+	<img class="logo" src="public/assets/sunspot.svg" alt="Sunspot Logo">
+	<button class="getLocation" value="use my location">use my location</button>
+	<div class="down">
+		<a data-scroll href="#sun"><i class="fa fa-angle-down fa-2x"></i></a>
+	</div>
+</header>
+
+<section id="sun">
+
+	<div class="rise wrapper">
+			<div class="buttonContainer">
+				<button id="riseTime">get sunrise time</button>
+			</div>
+
+		<div class="riseContainer">
+				<p>the sun will rise at</p>
+			<div class="riseDesc">
+				<p class="riseTimeReturn"></p>
+			</div>
+		</div>
+	</div>
+
+	<div class="set wrapper">
+			<div class="buttonContainer">
+				<button id="setTime">get sunset time</button>
+			</div>
+
+		<div class="setContainer">
+				<p>the sun will set at</p>
+			<div class="setDesc">
+				<p class="setTimeReturn"></p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="location">
+	<input id="userInput" placeholder="enter city" type="text">
+	<button>Enter</button>
+</section>
+
+
+<section class="places hidden animated fadeInLeft">
+<p>View them from:</p>
+</section>
+
+<div class="twitter">
+	<a class="twitter-share-button"
+	  href="https://twitter.com/intent/tweet?text=Check%20out%20this%20sunrise%20and%20sunset%20site%20by%20@jadewong!"
+	  data-size="large">
+	<i class="fa fa-twitter fa-2x"></i></a>
+</div>
+
+
+	<script src="dev/scripts/moment.js"></script>
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<!-- <script src="dev/scripts/dist/js/smooth-scroll.js"></script> -->
+	<!-- <script src="https://maps.googleapis.com/maps/api/place/autocomplete/json?types=(cities)&key=AIzaSyCcvmslt61Bo6l1aqepnQxAo4Coc07eAJw&input=to"></script> -->
+	<script src="dev/scripts/app.js"></script>
+
+
+<!-- 	<script>
+	    smoothScroll.init();
+	</script> -->
+
+
+</body>
+</html>
